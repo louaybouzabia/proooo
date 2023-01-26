@@ -1,0 +1,13 @@
+PROCEDURE insertionSort(A: list of sortable items)
+VAR
+    n:INTEGER = length(A);
+    j:INTEGER;
+BEGIN
+   FOR i FROM 1 TO n - 1 STEP 1 DO
+    j = i
+    WHILE (j > 0 and A[j-1] > A[j]) DO
+        swap(A[j], A[j-1])
+        j = j - 1
+    END_WHILE
+   END_FOR
+END
